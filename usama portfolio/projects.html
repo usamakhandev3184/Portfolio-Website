@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Usama Khan — Web Developer & UI Designer." />
+  <title>Projects | Usama Khan</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">Usama<span>Khan</span></div>
+      <nav class="navbar" id="navbar">
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1>My Projects</h1>
+    <p>A collection of things I've built — from small tools to full web apps.</p>
+  </section>
+
+  <!-- FILTER BUTTONS -->
+  <div class="proj-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="html">HTML / CSS</button>
+    <button class="filter-btn" data-filter="js">JavaScript</button>
+    <button class="filter-btn" data-filter="react">React</button>
+  </div>
+
+  <!-- PROJECTS GRID -->
+  <section class="projects projects-page">
+    <div class="project-grid" id="project-grid">
+
+      <div class="project-card" data-category="html">
+        <img src="https://picsum.photos/600/400?21" alt="Portfolio website project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Portfolio Website</h3>
+            <span class="proj-tag">HTML / CSS</span>
+          </div>
+          <p>Personal portfolio to showcase projects, skills, and contact information with a clean, modern design.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="https://picsum.photos/600/400?22" alt="To-Do App project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>To-Do App</h3>
+            <span class="proj-tag">JavaScript</span>
+          </div>
+          <p>Task tracker with local storage, drag-to-reorder, and priority labels. Fully responsive.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react">
+        <img src="https://picsum.photos/600/400?23" alt="E-commerce demo project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>E-Commerce Demo</h3>
+            <span class="proj-tag">React.js</span>
+          </div>
+          <p>Mock online store with product filtering, cart system, and checkout flow built in React.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="https://picsum.photos/600/400?24" alt="Weather app project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Weather App</h3>
+            <span class="proj-tag">JavaScript</span>
+          </div>
+          <p>Real-time weather app using OpenWeather API. Search any city and see live forecast data.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="react">
+        <img src="https://picsum.photos/600/400?25" alt="Blog platform project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Blog Platform</h3>
+            <span class="proj-tag">React.js</span>
+          </div>
+          <p>Full blog platform with markdown support, categories, search, and a clean reading experience.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html">
+        <img src="https://picsum.photos/600/400?26" alt="Restaurant landing page project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Restaurant Landing Page</h3>
+            <span class="proj-tag">HTML / CSS</span>
+          </div>
+          <p>Elegant restaurant website with menu section, gallery, and reservation form. Pixel-perfect design.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="#" class="proj-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo" style="margin-bottom:10px;">Usama<span>Khan</span></div>
+      <p>Building the web, one line at a time.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Usama Khan. Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
