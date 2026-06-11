@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Portfolio | Codebase Showcase by Usama Khan</title>
+    <meta name="description" content="Browse full-stack and front-end architectural projects developed by Usama Khan, including the Laravel Facebook Clone, API tools, and fully responsive platforms." />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://usamakhanportfolio.netlify.app/projects.html" />
+    <meta property="og:title" content="Projects Portfolio | Codebase Showcase by Usama Khan" />
+    <meta property="og:description" content="Live demos, technical specs, and GitHub structural access for full-stack web applications by Usama Khan." />
+    <meta property="og:image" content="https://usamakhanportfolio.netlify.app/images/og-preview.jpg" />
+  
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Projects Portfolio | Codebase Showcase by Usama Khan" />
+    <meta property="twitter:description" content="Live demos, technical specs, and GitHub structural access for web applications by Usama Khan." />
+  
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">Usama<span>Khan</span></div>
+      <nav class="navbar" id="navbar">
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <h1>My Projects</h1>
+    <p>A collection of things I've built — from small tools to full web apps.</p>
+  </section>
+
+  <div class="proj-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="html">HTML / CSS</button>
+    <button class="filter-btn" data-filter="js">JavaScript</button>
+    <button class="filter-btn" data-filter="react">React / Frameworks</button>
+  </div>
+
+  <section class="projects projects-page">
+    <div class="project-grid" id="project-grid">
+
+      <div class="project-card" data-category="react">
+        <img src="https://picsum.photos/600/400?27" alt="Facebook Clone Project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Facebook Clone</h3>
+            <span class="proj-tag">PHP / Laravel</span>
+          </div>
+          <p>A full-stack social network clone engineered with MVC architecture. Features secure Session Middleware authentication, dynamic relational database design using MySQL, and custom Eloquent ORM queries for post feeds.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="https://github.com/usamakhan" class="proj-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="html">
+        <img src="https://picsum.photos/600/400?21" alt="Portfolio website project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Portfolio Website</h3>
+            <span class="proj-tag">HTML / CSS</span>
+          </div>
+          <p>Personal portfolio website designed with clean semantic HTML5, fluid modern CSS grid/flexbox layouts, and fully optimized for mobile responsiveness and Netlify deployment.</p>
+          <div class="project-links">
+            <a href="https://usamakhanportfolio.netlify.app" class="proj-link" target="_blank">Live Demo</a>
+            <a href="https://github.com/usamakhan" class="proj-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="https://picsum.photos/600/400?22" alt="To-Do App project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>To-Do App</h3>
+            <span class="proj-tag">JavaScript</span>
+          </div>
+          <p>A JavaScript task management tool featuring full CRUD operations, local storage persistence so data remains on refresh, dynamic DOM manipulation, and user priority tagging.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="https://github.com/usamakhan" class="proj-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="js">
+        <img src="https://picsum.photos/600/400?24" alt="Weather app project" />
+        <div class="project-info">
+          <div class="project-top">
+            <h3>Weather App</h3>
+            <span class="proj-tag">JavaScript</span>
+          </div>
+          <p>Real-time weather app using OpenWeather API. Features dynamic asynchronous API fetch operations, live forecast location search tracking, and clean object layout structures.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link">Live Demo</a>
+            <a href="https://github.com/usamakhan" class="proj-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo" style="margin-bottom:10px;">Usama<span>Khan</span></div>
+      <p>Building the web, one line at a time.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Usama Khan. Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
