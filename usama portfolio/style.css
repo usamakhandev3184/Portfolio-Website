@@ -848,3 +848,210 @@ body.light-mode footer, body.light-mode .footer {
 .footer-links a:hover {
   color: #00bcd4 !important;
 }
+
+/* ============================================================
+   RESPONSIVE / MOBILE FIXES
+   Breakpoints: 992px (tablets/small laptops), 768px (large
+   phones/tablets), 480px (small phones).
+   ============================================================ */
+
+/* ---------- Tablets & small laptops (<=992px) ---------- */
+@media (max-width: 992px) {
+
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-preview-inner,
+  .about-full-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-bio {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .about-img-wrap img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Large phones / tablets (<=768px) ---------- */
+@media (max-width: 768px) {
+
+  /* --- Mobile Navigation Menu --- */
+  .container {
+    position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .mobile-toggle {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .navbar ul#nav-list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    background: var(--header-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    padding: 8px 0;
+  }
+
+  .navbar ul#nav-list.show {
+    display: flex;
+  }
+
+  .navbar ul#nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul#nav-list li a {
+    display: block;
+    padding: 12px 20px;
+  }
+
+  /* --- Hero Section --- */
+  .home {
+    height: auto;
+    min-height: 100vh;
+    padding: 110px 20px 60px;
+  }
+
+  .home-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-sub {
+    font-size: 1rem;
+  }
+
+  .home-btns {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .home-btns .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* --- Skills Strip --- */
+  .strip-inner {
+    gap: 14px 26px;
+  }
+
+  /* --- Section Spacing & Titles --- */
+  .about-preview,
+  .projects, .projects-page,
+  .about-full,
+  .skills-full,
+  .contact, .contact-page,
+  .timeline-section {
+    padding: 60px 5%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  /* --- About Facts Grid --- */
+  .about-facts {
+    grid-template-columns: 1fr;
+  }
+
+  /* --- Page Hero (About/Projects/Contact) --- */
+  .page-hero {
+    padding: 5rem 20px 3rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  /* --- Contact Form --- */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-col,
+  .contact-form-col {
+    padding: 30px 22px !important;
+  }
+
+  /* --- Timeline --- */
+  .timeline {
+    padding-left: 22px !important;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.05rem;
+  }
+
+  /* --- Footer --- */
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 14px 20px !important;
+  }
+}
+
+/* ---------- Small phones (<=480px) ---------- */
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .home-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .home-greeting {
+    font-size: 1rem;
+  }
+
+  .about-img-wrap img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  /* Force single column project cards so they never overflow */
+  .project-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stack bio detail rows on very small screens */
+  .bio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .bio-label {
+    min-width: unset;
+  }
+}
