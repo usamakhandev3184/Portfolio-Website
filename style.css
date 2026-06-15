@@ -967,6 +967,139 @@ body.light-mode footer, body.light-mode .footer {
    ============================================================ */
 
 /* ============================================================
+   STATS SECTION
+   ============================================================ */
+.stats-section {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 50px 5%;
+}
+
+.stats-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00bcd4;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.1;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-muted) !important;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 60px;
+  background: var(--border-color);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   TIMELINE GRID (Experience + Education split)
+   ============================================================ */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.timeline-col .section-title {
+  text-align: left;
+  font-size: 1.6rem;
+  margin-bottom: 35px;
+}
+
+.timeline-col .section-title i {
+  color: #00bcd4;
+  margin-right: 8px;
+  font-size: 1.4rem;
+}
+
+.timeline-col .section-title::after {
+  left: 0;
+  transform: none;
+}
+
+/* ============================================================
+   FOOTER SOCIAL ICONS
+   ============================================================ */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 18px 0 10px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted) !important;
+  font-size: 1rem;
+  transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.2s;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background: #00bcd4;
+  border-color: #00bcd4 !important;
+  color: #0f172a !important;
+  transform: translateY(-3px);
+}
+
+/* ============================================================
+   ABOUT SOCIAL BUTTONS WITH ICONS
+   ============================================================ */
+.about-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.about-social a i {
+  font-size: 1rem;
+}
+
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.contact-socials a i {
+  font-size: 1rem;
+}
+
+/* ============================================================
    SCROLL FADE-IN ANIMATIONS
    ============================================================ */
 .fade-in-up {
@@ -1037,6 +1170,19 @@ body.light-mode footer, body.light-mode .footer {
 
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .stats-inner {
+    gap: 0;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
   }
 }
 
