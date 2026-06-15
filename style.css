@@ -689,7 +689,7 @@ body.light-mode .proj-tag {
   background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary)) !important;
   color: var(--text-main) !important;
   text-align: center;
-  padding: 6rem 20px 4rem;
+  padding: 4rem 20px 2.5rem;
   border-bottom: 1px solid var(--border-color) !important;
 }
 
