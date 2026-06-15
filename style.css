@@ -230,7 +230,6 @@ a {
 .section-title span {
   color: #00bcd4;
 }
-}
 
 /* ===== HOME / HERO ===== */
 .home {
@@ -246,39 +245,6 @@ a {
   text-align: center;
   padding: 80px 20px 60px;
   position: relative;
-}
-
-/* Scroll-down indicator */
-.home::after {
-  content: '';
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 22px;
-  height: 36px;
-  border: 2px solid rgba(0,188,212,0.5);
-  border-radius: 12px;
-  background: transparent;
-}
-
-.home::before {
-  content: '';
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 8px;
-  background: #00bcd4;
-  border-radius: 2px;
-  animation: scrollDot 1.6s ease-in-out infinite;
-  z-index: 1;
-}
-
-@keyframes scrollDot {
-  0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
-  100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
 }
 
 body.light-mode .home {
