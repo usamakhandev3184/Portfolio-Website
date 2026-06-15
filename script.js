@@ -25,6 +25,26 @@ if (mobileToggle && navList) {
 }
 
 
+/* ── 1b. ACTIVE NAV LINK — highlight current page ── */
+(function setActiveNavLink() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('#nav-list a');
+
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute('href').split('/').pop();
+    // Match exact page — also treat '' or '/' as index.html
+    const isHome = (currentPage === '' || currentPage === 'index.html') && (linkPage === 'index.html');
+    const isMatch = linkPage === currentPage;
+
+    if (isHome || isMatch) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+})();
+
+
 /* ── 2. HEADER SHADOW ON SCROLL ── */
 const header = document.getElementById('header');
 
