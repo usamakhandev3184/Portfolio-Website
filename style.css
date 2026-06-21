@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth; 
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* ── DYNAMIC SYSTEM VARIABLES (Theme Control) ── */
 :root {
   /* Default Dark Mode (Slate / Navy Premium Hybrid) */
@@ -1364,5 +1368,24 @@ body.light-mode footer, body.light-mode .footer {
 
   .bio-label {
     min-width: unset;
+  }
+
+  /* --- Stats Section Fix (prevents overflow + cramped text) --- */
+  .stats-inner {
+    gap: 0;
+  }
+
+  .stat-item {
+    padding: 8px 6px;
+    min-width: 0;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
   }
 }
